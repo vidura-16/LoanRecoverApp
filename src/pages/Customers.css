@@ -1,0 +1,429 @@
+.customers-content {
+  padding: 30px;
+}
+
+/* Page Header */
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.page-header h2 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  color: #1f2937;
+}
+
+.page-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.add-customer-button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-customer-button:hover {
+  background: #1d4ed8;
+}
+
+/* Search */
+
+.customer-tools {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0 14px;
+}
+
+.search-box span {
+  font-size: 15px;
+}
+
+.search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+.customer-tools select {
+  min-width: 160px;
+  padding: 0 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+  color: #374151;
+  outline: none;
+}
+
+/* Customer Card */
+
+.customers-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-header h3 {
+  margin: 0 0 5px;
+  font-size: 17px;
+  color: #1f2937;
+}
+
+.table-header span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Table */
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 14px 20px;
+  background: #f9fafb;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 16px 20px;
+  border-top: 1px solid #f1f5f9;
+  color: #374151;
+  font-size: 14px;
+}
+
+tbody tr:hover {
+  background: #fafafa;
+}
+
+/* Customer Name */
+
+.customer-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.customer-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.customer-name strong {
+  color: #1f2937;
+}
+
+/* Status */
+
+.status-badge {
+  display: inline-flex;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.active {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-badge.inactive {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+.status-badge.completed { background: #dbeafe; color: #1d4ed8; }
+.profile-link { color: #2563eb; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.profile-link:hover { text-decoration: underline; }
+.inline-error, .inline-success { border-radius: 8px; padding: 11px 14px; margin: 0 0 16px; font-size: 14px; }
+.inline-error { color: #b91c1c; background: #fef2f2; }
+.inline-error button { margin-left: 8px; color: inherit; background: none; border: 0; text-decoration: underline; cursor: pointer; }
+.inline-success { color: #15803d; background: #f0fdf4; }
+.customer-form-modal { max-width: 720px; max-height: 92vh; overflow-y: auto; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 16px; }
+.form-wide { grid-column: 1 / -1; }
+.loan-calculation { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; padding: 15px; margin: 0 0 18px; border-radius: 8px; background: #f8fafc; }
+.loan-calculation div { display: flex; flex-direction: column; gap: 5px; }
+.loan-calculation span, .loan-calculation small { color: #6b7280; font-size: 12px; }
+.loan-calculation strong { color: #1f2937; font-size: 16px; }
+.loan-calculation small { grid-column: 1 / -1; }
+.form-group input:disabled, .form-group textarea:disabled { background: #f9fafb; }
+.save-button:disabled, .cancel-button:disabled { opacity: .65; cursor: wait; }
+
+.customer-mobile-cards { display: none; }
+
+/* Actions */
+
+.action-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.action-buttons button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.action-buttons button:hover {
+  background: #f3f4f6;
+}
+
+/* Empty State */
+
+.empty-state {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.empty-state h3 {
+  margin: 0 0 8px;
+  color: #1f2937;
+}
+
+.empty-state p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Modal */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.customer-modal {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.modal-header h2 {
+  margin: 0 0 5px;
+  color: #1f2937;
+}
+
+.modal-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.close-button {
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+/* Form */
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Modal Buttons */
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.cancel-button,
+.save-button {
+  padding: 10px 17px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-button {
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #374151;
+}
+
+.save-button {
+  border: none;
+  background: #2563eb;
+  color: white;
+}
+
+.save-button:hover {
+  background: #1d4ed8;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .customers-content {
+    padding: 20px;
+  }
+
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .add-customer-button {
+    width: 100%;
+  }
+
+  .customer-tools {
+    flex-direction: column;
+  }
+
+  .search-box {
+    max-width: none;
+  }
+
+  .customer-tools select {
+    height: 42px;
+  }
+
+  .customer-modal {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-wide { grid-column: auto; }
+}
+
+@media (max-width: 700px) {
+  .customer-mobile-cards { display: grid; gap: 12px; padding: 12px; }
+  .customer-desktop-table { display: none; }
+  .customer-mobile-card { min-width: 0; padding: 15px; border: 1px solid #e5e7eb; border-radius: 11px; background: #fff; }
+  .customer-mobile-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .customer-mobile-heading .customer-name { min-width: 0; }
+  .customer-mobile-heading strong { overflow-wrap: anywhere; }
+  .customer-mobile-phone { display: inline-block; margin: 12px 0; color: #2563eb; font-size: 14px; }
+  .customer-mobile-finances { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding: 12px 0; border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9; }
+  .customer-mobile-finances div { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+  .customer-mobile-finances span { color: #6b7280; font-size: 11px; }
+  .customer-mobile-finances strong { color: #1f2937; font-size: 12px; overflow-wrap: anywhere; }
+  .customer-mobile-profile { min-height: 44px; display: flex; align-items: center; justify-content: space-between; padding-top: 7px; color: #2563eb; text-decoration: none; font-size: 14px; font-weight: 600; }
+  .customer-tools { gap: 10px; }
+  .search-box { min-height: 46px; }
+  .customer-tools select { min-height: 46px; }
+  .modal-overlay { align-items: flex-end; padding: 8px; }
+  .customer-modal { max-height: calc(100dvh - 16px); padding: 20px 16px; border-radius: 16px 16px 10px 10px; overflow-y: auto; }
+  .modal-header { margin-bottom: 18px; }
+  .modal-actions { position: sticky; bottom: -20px; padding: 12px 0 4px; background: #fff; }
+  .modal-actions button { min-height: 46px; flex: 1; }
+  .close-button { min-width: 44px; min-height: 44px; }
+}
+
+@media (max-width: 370px) {
+  .customers-content { padding: 14px 12px; }
+  .customer-mobile-finances { gap: 5px; }
+  .customer-mobile-finances strong { font-size: 11px; }
+  .customer-mobile-card { padding: 12px; }
+}

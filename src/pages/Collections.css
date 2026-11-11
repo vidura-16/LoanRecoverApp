@@ -1,0 +1,57 @@
+.collections-content { padding: 30px; }
+.collections-intro { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 22px; }
+.collections-intro h2 { margin: 0 0 6px; color: #1f2937; font-size: 24px; }
+.collections-intro p { margin: 0; color: #6b7280; font-size: 14px; }
+.collection-date { color: #6b7280; font-size: 13px; white-space: nowrap; }
+.collection-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px; }
+.collection-summary > div { display: flex; flex-direction: column; gap: 8px; padding: 18px 20px; border: 1px solid #e5e7eb; border-radius: 11px; background: #fff; }
+.collection-summary span { color: #6b7280; font-size: 13px; }
+.collection-summary strong { color: #1f2937; font-size: 21px; }
+.collection-list-card { overflow: hidden; }
+.collection-customer-link { color: #1f2937; font-weight: 600; text-decoration: none; }
+.collection-customer-link:hover { color: #2563eb; }
+.status-badge.due { background: #fef3c7; color: #92400e; }
+.collection-actions { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.collect-button, .message-button { display: inline-flex; align-items: center; justify-content: center; min-height: 34px; padding: 7px 10px; border-radius: 7px; font-size: 12px; font-weight: 600; text-decoration: none; cursor: pointer; }
+.collect-button { border: 0; color: white; background: #2563eb; }
+.collect-button:hover:not(:disabled) { background: #1d4ed8; }
+.collect-button:disabled { color: #6b7280; background: #e5e7eb; cursor: not-allowed; }
+.message-button { border: 1px solid #d1d5db; color: #374151; background: white; }
+.message-button:hover { background: #f9fafb; }
+.message-button:disabled { color: #9ca3af; background: #f9fafb; cursor: not-allowed; }
+.sms-feedback { max-width: 240px; margin: 6px 0 0; color: #15803d; font-size: 11px; white-space: normal; }
+.sms-feedback.sms-error { color: #b91c1c; }
+.collection-mobile-cards { display: none; }
+@media (max-width: 800px) {
+  .collections-content { padding: 20px; }
+  .collections-intro { align-items: flex-start; flex-direction: column; }
+  .collection-summary { grid-template-columns: 1fr; gap: 10px; }
+  .collection-summary > div { padding: 14px 16px; }
+}
+
+@media (max-width: 700px) {
+  .collection-desktop-table { display: none; }
+  .collection-mobile-cards { display: grid; gap: 12px; padding: 12px; }
+  .collection-mobile-card { min-width: 0; padding: 15px; border: 1px solid #e5e7eb; border-radius: 11px; background: #fff; }
+  .collection-mobile-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+  .collection-mobile-heading .collection-customer-link { font-size: 15px; overflow-wrap: anywhere; }
+  .collection-mobile-phone { display: inline-block; margin: 10px 0; color: #2563eb; font-size: 14px; }
+  .collection-mobile-values { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; padding: 11px 0; border-top: 1px solid #f1f5f9; }
+  .collection-mobile-values div { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+  .collection-mobile-values span { color: #6b7280; font-size: 11px; }
+  .collection-mobile-values strong { color: #1f2937; font-size: 12px; overflow-wrap: anywhere; }
+  .collection-mobile-collect { width: 100%; min-height: 46px; margin: 2px 0 10px; font-size: 14px; }
+  .collection-mobile-card .payment-sms-actions { min-width: 0; padding-top: 2px; }
+  .collection-mobile-card .message-button, .collection-mobile-card .confirm-sms-button { min-height: 46px; flex: 1; font-size: 14px; }
+  .collection-mobile-card .sms-status { width: 100%; }
+  .collection-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .collection-summary > div:last-child { grid-column: 1 / -1; }
+}
+
+@media (max-width: 370px) {
+  .collections-content { padding: 14px 12px; }
+  .collection-mobile-card { padding: 12px; }
+  .collection-summary { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .collection-summary > div { padding: 12px; }
+  .collection-summary strong { font-size: 17px; }
+}

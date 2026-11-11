@@ -1,0 +1,7 @@
+.sms-history-content { padding: 30px; }
+.sms-history-refresh { padding: 8px 12px; border: 1px solid #d1d5db; border-radius: 7px; color: #374151; background: #fff; cursor: pointer; }
+.sms-history-status { display: inline-block; padding: 4px 7px; border-radius: 999px; background: #f3f4f6; color: #4b5563; font-size: 11px; font-weight: 700; white-space: nowrap; }
+.sms-history-status.sms_app_opened { background: #fef3c7; color: #92400e; }
+.sms-history-status.confirmed_sent { background: #dcfce7; color: #166534; }
+.sms-history-message { min-width: 220px; white-space: pre-line; color: #4b5563; font-size: 12px; }
+@media (max-width: 800px) { .sms-history-content { padding: 20px; } }

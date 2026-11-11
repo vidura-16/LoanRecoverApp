@@ -1,0 +1,120 @@
+.topbar {
+  height: 88px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.topbar p {
+  margin: 5px 0 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.mobile-menu {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.language-toggle {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  color: #1f2937;
+  padding: 8px 11px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.language-toggle:hover { background: #f3f4f6; }
+
+.notification {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.user-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info strong {
+  font-size: 13px;
+}
+
+.user-info span {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+@media (max-width: 700px) {
+  .topbar {
+    padding: 0 18px;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .user-info {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .topbar { min-height: 76px; height: auto; padding: 12px 14px; gap: 8px; }
+  .topbar-left { min-width: 0; flex: 1; }
+  .topbar-left > div { min-width: 0; }
+  .topbar h1 { font-size: 19px; }
+  .topbar p { max-width: 58vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; }
+  .mobile-menu { flex: 0 0 44px; width: 44px; height: 44px; margin-right: 5px; border-radius: 8px; color: #1f2937; }
+  .mobile-menu:hover { background: #f3f4f6; }
+  .user-area { gap: 7px; }
+  .notification { display: none; }
+  .user-avatar { width: 34px; height: 34px; flex: 0 0 34px; }
+}
+
+@media (max-width: 350px) {
+  .topbar { padding: 10px; }
+  .topbar h1 { font-size: 17px; }
+  .topbar p { max-width: 52vw; }
+}

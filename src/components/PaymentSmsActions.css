@@ -1,0 +1,10 @@
+.payment-sms-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; min-width: 190px; }
+.confirm-sms-button { min-height: 32px; padding: 6px 9px; border: 1px solid #15803d; border-radius: 7px; color: #15803d; background: #fff; font-size: 12px; font-weight: 600; cursor: pointer; }
+.confirm-sms-button:disabled { opacity: .6; cursor: wait; }
+.sms-status, .sms-desktop-note { color: #6b7280; font-size: 11px; white-space: normal; }
+.sms-desktop-note { max-width: 180px; }
+@media (max-width: 700px) {
+  .payment-sms-actions { width: 100%; min-width: 0; gap: 8px; }
+  .payment-sms-actions .message-button, .payment-sms-actions .confirm-sms-button { min-height: 46px; padding: 9px 12px; font-size: 14px; }
+  .sms-status, .sms-desktop-note { font-size: 12px; }
+}

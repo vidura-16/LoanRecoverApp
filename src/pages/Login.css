@@ -1,0 +1,154 @@
+/* ================================
+   Login Page
+================================ */
+
+.login-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #f5f7fb;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+  color: #111827;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin: 8px 0 30px;
+  font-size: 14px;
+}
+
+.auth-form-title {
+  margin: 0;
+  color: #111827;
+  text-align: center;
+  font-size: 21px;
+}
+
+/* Form */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+/* Error */
+
+.error-message {
+  margin: -5px 0 15px;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+/* Login Button */
+
+.login-card button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-card button:hover {
+  background: #1d4ed8;
+}
+
+.login-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .login-page {
+    padding: 15px;
+  }
+
+  .login-card {
+    padding: 30px 22px;
+  }
+
+  .login-card h1 {
+    font-size: 28px;
+  }
+}
+.login-language-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.login-card .auth-mode-toggle {
+  display: block;
+  width: auto;
+  margin: 16px auto 0;
+  padding: 8px 12px;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  background: transparent;
+  color: #2563eb;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-card .auth-mode-toggle:hover { background: #eff6ff; }
+.login-card .auth-mode-toggle:disabled { cursor: wait; opacity: .65; }
+
+.login-card .profile-retry-button {
+  margin-top: 10px;
+  background: #15803d;
+}
